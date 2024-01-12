@@ -1,10 +1,10 @@
-function hello(parametro, parametro2) {
-  parametro = "World";
+function hello(parametro) {
+  const world = "World";
   if (typeof parametro === "string") {
-    return parametro2 + parametro + "!";
+    return `Hello, ${parametro}!`;
   } else {
-    return parametro;
+    return `Hello, ${world}!`;
   }
 }
 
-console.log(hello(1, "Hello, "));
+console.log(hello(1));
