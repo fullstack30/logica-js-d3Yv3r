@@ -1,7 +1,7 @@
 function hello(parametro, parametro2) {
   parametro = "World";
   if (typeof parametro === "string") {
-    return parametro2.concat(parametro, "!");
+    return parametro2 + parametro + "!";
   } else {
     return parametro;
   }
