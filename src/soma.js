@@ -1,5 +1,5 @@
 function soma(n1, n2) {
-  if (n2 === "" || n2 === undefined) {
+  if (n2 === "" || n2 === undefined || n2 === null) {
     return "Parâmetros inválidos!";
   }
   if (typeof n1 === "string" || typeof n2 === "string") {
@@ -8,7 +8,7 @@ function soma(n1, n2) {
   return n1 + n2;
 }
 
-console.log(soma("50", "10"));
+console.log(soma(3, null));
 
 /**
   Dentro da pasta src deve existir um arquivo chamado soma.js
