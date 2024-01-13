@@ -1,12 +1,14 @@
 function soma(n1, n2) {
-  if (typeof n1 !== "number" || typeof n2 !== "number") {
+  if (n2 === "" || n2 === undefined) {
     return "Parâmetros inválidos!";
-  } else {
-    return Number(n1 + n2);
   }
+  if (typeof n1 === "string" || typeof n2 === "string") {
+    return Number(n1) + Number(n2);
+  }
+  return n1 + n2;
 }
 
-console.log(soma(1, 2));
+console.log(soma("50", "10"));
 
 /**
   Dentro da pasta src deve existir um arquivo chamado soma.js
