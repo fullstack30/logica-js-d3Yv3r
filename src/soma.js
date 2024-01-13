@@ -1,9 +1,8 @@
 function soma(n1, n2) {
-  if (n2 === "" || n2 === undefined || n2 === null) {
-    return "Parâmetros inválidos!";
-  }
   if (typeof n1 === "string" || typeof n2 === "string") {
     return Number(n1) + Number(n2);
+  } else if (typeof n1 !== "number" || n2 !== "number") {
+    return "Parâmetros inválidos!";
   }
   return n1 + n2;
 }
