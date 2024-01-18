@@ -18,5 +18,3 @@ function soma_impar(n1) {
     return "Função aceita apenas números inteiros positivos.";
   }
 }
-
-console.log(soma_impar(0));
