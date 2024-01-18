@@ -8,7 +8,7 @@
 */
 
 function soma_impar(n1) {
-  if (Number.isInteger(n1) && n1 > 0) {
+  if (Number.isInteger(n1) && n1 >= 0) {
     let soma = 0;
     for (let impar = 1; impar <= n1; impar += 2) {
       soma += impar;
@@ -18,3 +18,5 @@ function soma_impar(n1) {
     return "Função aceita apenas números inteiros positivos.";
   }
 }
+
+console.log(soma_impar(0));
