@@ -10,15 +10,18 @@
 
 function inverte_lista(array) {
   let index = array.length - 1;
+
+  const newArray = [];
+
   if (Array.isArray(array)) {
     do {
-      console.log(array[index]);
+      newArray.push(array[index]);
       index--;
     } while (index >= 0);
-    return;
   } else {
     return "Argumento inválido. Função espera receber um array como argumento.";
   }
+  return newArray;
 }
 
-// inverte_lista(["item 1", "item 2", "item 3"]);
+// console.log(inverte_lista([0, 1, 2, 3, 4, 5]));
