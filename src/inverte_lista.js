@@ -15,7 +15,9 @@ function inverte_lista(array) {
 
   if (Array.isArray(array)) {
     do {
-      newArray.push(array[index]);
+      if (array[index]) {
+        newArray.push(array[index]);
+      }
       index--;
     } while (index >= 0);
   } else {
@@ -24,4 +26,4 @@ function inverte_lista(array) {
   return newArray;
 }
 
-// console.log(inverte_lista([0, 1, 2, 3, 4, 5]));
+console.log(inverte_lista([]));
