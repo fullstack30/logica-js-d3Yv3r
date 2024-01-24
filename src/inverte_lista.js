@@ -15,8 +15,9 @@ function inverte_lista(array) {
 
   if (Array.isArray(array)) {
     do {
-      if (array[index]) {
+      if (array[index] || array[index] === 0) {
         newArray.push(array[index]);
+        // console.log(array[index]);
       }
       index--;
     } while (index >= 0);
