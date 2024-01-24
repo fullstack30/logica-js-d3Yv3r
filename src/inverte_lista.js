@@ -9,15 +9,13 @@
 */
 
 function inverte_lista(array) {
-  let index = array.length - 1;
-
   const newArray = [];
 
   if (Array.isArray(array)) {
+    let index = array.length - 1;
     do {
       if (array[index] || array[index] === 0) {
         newArray.push(array[index]);
-        // console.log(array[index]);
       }
       index--;
     } while (index >= 0);
@@ -27,4 +25,4 @@ function inverte_lista(array) {
   return newArray;
 }
 
-console.log(inverte_lista([]));
+console.log(inverte_lista());
