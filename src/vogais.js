@@ -37,6 +37,7 @@ function vogais(texto) {
     "ï",
     "ö",
     "ü",
+    "ç",
   ];
 
   if (typeof texto === "string") {
