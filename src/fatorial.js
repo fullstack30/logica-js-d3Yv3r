@@ -12,7 +12,7 @@
 function fatorial(n1) {
   let resultado = n1;
 
-  if (typeof n1 !== "number" || n1 < 0) {
+  if (n1 < 0 || n1 === null || n1 === undefined || n1 === "" || n1 === NaN) {
     return "Função deve receber um argumento do tipo inteiro positivo.";
   }
 
@@ -20,5 +20,12 @@ function fatorial(n1) {
     n1--;
     resultado *= n1;
   }
-  return resultado;
+
+  if (typeof resultado !== "number") {
+    return "Função deve receber um argumento do tipo inteiro positivo.";
+  } else {
+    return resultado;
+  }
 }
+
+console.log(fatorial("3"));
