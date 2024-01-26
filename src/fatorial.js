@@ -16,6 +16,10 @@ function fatorial(n1) {
     return "Função deve receber um argumento do tipo inteiro positivo.";
   }
 
+  if (n1 === 0 || n1 === 1) {
+    return 1;
+  }
+
   while (n1 > 1) {
     n1--;
     resultado *= n1;
@@ -28,4 +32,4 @@ function fatorial(n1) {
   }
 }
 
-console.log(fatorial("3"));
+// console.log(fatorial("3"));
