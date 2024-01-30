@@ -13,6 +13,9 @@ function apenas_par(n1) {
     return "Função aceita apenas números inteiros.";
   }
   let newArray = [];
+  if (n1 == 0) {
+    return 0;
+  }
   if (n1 >= 0) {
     for (let i = 0; i <= n1; i++) {
       if (i % 2 == 0) {
