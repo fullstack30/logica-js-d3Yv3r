@@ -14,7 +14,8 @@ function apenas_par(n1) {
   }
   let newArray = [];
   if (n1 == 0) {
-    return 0;
+    newArray.push(0);
+    return newArray;
   }
   if (n1 >= 0) {
     for (let i = 0; i <= n1; i++) {
@@ -33,4 +34,4 @@ function apenas_par(n1) {
   return newArray;
 }
 
-console.log(apenas_par(-6));
+console.log(apenas_par(-10));
