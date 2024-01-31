@@ -30,6 +30,7 @@ function apenas_par(n1) {
         newArray.push(i);
       }
     }
+    newArray = newArray.reverse();
   }
   return newArray;
 }
